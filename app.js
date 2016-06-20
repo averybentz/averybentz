@@ -1,7 +1,7 @@
-var connect = require('connect');
+var express = require('express');
 var http = require('http');
 
-var app = connect();
+var app = express();
 
 // gzip/deflate outgoing responses
 var compression = require('compression');
@@ -22,9 +22,9 @@ var fs = require('fs');
 //Read form page as plain text
 var form_page = fs.readFileSync('index.html', 'utf8');
 
-// respond to all requests
-app.use(function(req, res){
-  res.use(form_page);
+//Get them
+app.get('/', function (req, res) {
+  res.send(form_page);
 });
 
 //create node.js http server and listen on port
