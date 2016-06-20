@@ -1,14 +1,13 @@
 {
   "name": "averybentz",
   "version": "1.0.0",
-  "description": "This example is so cool.",
-  "main": "web.js",
+  "description": "Personal website",
+  "main": "app.js",
   "keywords": [
-    "example",
-    "heroku"
+    "avery",
+    "bentz"
   ],
-  "author": "",
-  "license": "MIT",
+  "author": "Avery Bentz",
   "engines": {
     "node": "4.4.5"
   }
