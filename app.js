@@ -1,39 +1,3 @@
-/*
-/*
- * Module dependencies
-//close bracket
-var express = require('express')
-
-var app = express()
-function compile(str, path) {
-  return stylus(str)
-    .set('filename', path)
-    .use(nib())
-}
-app.set('views', __dirname + '/views')
-app.set('view engine', 'html')
-app.use(express.logger('dev'))
-/*app.use(stylus.middleware(
-  { src: __dirname + '/public'
-  , compile: compile
-  }
-))*/
-//app.use(express.static(__dirname + '/public'))
-
-//Run
-/*app.get('/', function (req, res) {
-  res.send('Hi there!')
-  res.end('hi')
-}) 
-/*
-app.get('/', function (req, res) {
-  res.render('index'),
-  { title: 'Home' }
-  )
-})
-
-app.listen(3000)*/
-
 var connect = require('connect');
 var http = require('http');
 
@@ -51,7 +15,14 @@ app.use(cookieSession({
 
 // parse urlencoded request bodies into req.body
 var bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
+
+//Read form page as plain text
+var form_page = fs.readFileSync('/views/index.html', 'utf8');
+
+app.get('/', function (req, res) {
+  res.send(form_page);
+});
 
 // respond to all requests
 app.use(function(req, res){
