@@ -10,7 +10,7 @@ app.use(compression());
 app.use(express.static('public'));
 
 // parse urlencoded request bodies into req.body
-var bodyParser = require('body-parser');
+var body_parser = require('body-parser');
 app.use(bodyParser.json());
 app.use(body_parser.urlencoded({extended: true}));
 
