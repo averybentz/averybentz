@@ -22,13 +22,9 @@ var fs = require('fs');
 //Read form page as plain text
 var form_page = fs.readFileSync('index.html', 'utf8');
 
-app.get('/', function (req, res) {
-  res.send(form_page);
-});
-
 // respond to all requests
 app.use(function(req, res){
-  res.end('Hello from Connect!\n');
+  res.send(form_page);
 });
 
 //create node.js http server and listen on port
