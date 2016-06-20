@@ -16,6 +16,16 @@ app.use(body_parser.urlencoded({extended: true}));
 
 var fs = require('fs');
 
+//Handle users using knox
+//Create s3 client
+var knox = require('knox');
+var client = knox.createClient({
+    key: 'AKIAJACGUIOE76YF2I6A'
+  , secret: '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'
+  , bucket: 'averybentz'
+});
+
+
 //Read form page as plain text
 var form_page = fs.readFileSync('index.html', 'utf8');
 
