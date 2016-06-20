@@ -9,6 +9,7 @@
   ],
   "author": "Avery Bentz",
   "engines": {
-    "node": "4.4.5"
+    "node": "4.4.5",
+    "npm": "2.15.5"
   }
 }
