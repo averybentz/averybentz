@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 var fs = require('fs');
 
 //Read form page as plain text
-var form_page = fs.readFileSync('/views/index.html', 'utf8');
+var form_page = fs.readFileSync('index.html', 'utf8');
 
 app.get('/', function (req, res) {
   res.send(form_page);
