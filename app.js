@@ -59,7 +59,4 @@ app.use(function(req, res){
 });
 
 //create node.js http server and listen on port
-//http.createServer(app).listen(process.env.PORT || 3000);
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
+http.createServer(app).listen(process.env.PORT || 3000);
