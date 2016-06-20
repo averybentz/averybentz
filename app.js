@@ -21,7 +21,7 @@ app.use(express.static(__dirname + '/public'))
 
 //Run
 app.get('/', function (req, res) {
-  res.end('Hi there!')
+  res.send('Hi there!')
 }) 
 /*
 app.get('/', function (req, res) {
