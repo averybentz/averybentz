@@ -1,4 +1,15 @@
 {
-  "name": "",
-  "version": ""
+  "name": "averybentz",
+  "version": "1.0.0",
+  "description": "This example is so cool.",
+  "main": "web.js",
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": "4.4.5"
+  }
 }
