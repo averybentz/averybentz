@@ -17,6 +17,8 @@ app.use(cookieSession({
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
+var fs = require('fs');
+
 //Read form page as plain text
 var form_page = fs.readFileSync('/views/index.html', 'utf8');
 
