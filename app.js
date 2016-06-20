@@ -22,6 +22,7 @@ app.use(express.static(__dirname + '/public'))
 //Run
 app.get('/', function (req, res) {
   res.send('Hi there!')
+  res.end('hi')
 }) 
 /*
 app.get('/', function (req, res) {
@@ -29,3 +30,5 @@ app.get('/', function (req, res) {
   { title: 'Home' }
   )
 })*/
+
+app.listen(3000)
