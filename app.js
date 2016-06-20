@@ -12,11 +12,11 @@ function compile(str, path) {
 app.set('views', __dirname + '/views')
 app.set('view engine', 'html')
 app.use(express.logger('dev'))
-app.use(stylus.middleware(
+/*app.use(stylus.middleware(
   { src: __dirname + '/public'
   , compile: compile
   }
-))
+))*/
 app.use(express.static(__dirname + '/public'))
 
 //Run
