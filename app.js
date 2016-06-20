@@ -24,7 +24,7 @@ var form_page = fs.readFileSync('index.html', 'utf8');
 
 // respond to all requests
 app.use(function(req, res){
-  res.send(form_page);
+  res.use(form_page);
 });
 
 //create node.js http server and listen on port
