@@ -9,12 +9,6 @@ app.use(compression());
 
 app.use(express.static('public'));
 
-// store session state in browser cookie
-var cookieSession = require('cookie-session');
-app.use(cookieSession({
-    keys: ['secret1', 'secret2']
-}));
-
 // parse urlencoded request bodies into req.body
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
