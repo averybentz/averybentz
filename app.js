@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
 app.listen(3000)*/
 
 var connect = require('connect');
-var http = require('http');
+//var http = require('http');
 
 var app = connect();
 
@@ -59,4 +59,4 @@ app.use(function(req, res){
 });
 
 //create node.js http server and listen on port
-http.createServer(app).listen(process.env.PORT || 3000);
+app.listen(3000);
