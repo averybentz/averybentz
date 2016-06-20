@@ -59,4 +59,4 @@ app.use(function(req, res){
 });
 
 //create node.js http server and listen on port
-app.listen(3000);
+app.listen(process.env.PORT);
