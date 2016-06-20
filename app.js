@@ -7,6 +7,8 @@ var app = express();
 var compression = require('compression');
 app.use(compression());
 
+app.use(express.static('public'));
+
 // store session state in browser cookie
 var cookieSession = require('cookie-session');
 app.use(cookieSession({
@@ -28,4 +30,5 @@ app.get('/', function (req, res) {
 });
 
 //create node.js http server and listen on port
-http.createServer(app).listen(process.env.PORT || 3000);
+//http.createServer(app).listen(process.env.PORT || 3000);
+var server = app.listen(process.env.PORT || 3000);
