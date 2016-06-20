@@ -11,7 +11,7 @@ app.use(express.static('public'));
 
 // parse urlencoded request bodies into req.body
 var body_parser = require('body-parser');
-app.use(bodyParser.json());
+app.use(body_parser.json());
 app.use(body_parser.urlencoded({extended: true}));
 
 var fs = require('fs');
