@@ -1,7 +1,4 @@
 {
   "name": "",
-  "version": "",
-  "dependencies": {
-    "express": "^4.14.0"
-  }
+  "version": ""
 }

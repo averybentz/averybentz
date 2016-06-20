@@ -1,0 +1,28 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'init' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose config Skipping project config: /Users/averybentz/.npmrc. (matches userconfig)
+5 silly package data undefined
+6 info init written successfully
+7 verbose stack Error: Cannot find module 'spdx'
+7 verbose stack     at Function.Module._resolveFilename (module.js:325:15)
+7 verbose stack     at Function.Module._load (module.js:276:25)
+7 verbose stack     at Module.require (module.js:353:17)
+7 verbose stack     at require (internal/module.js:12:17)
+7 verbose stack     at Object.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/init-package-json/node_modules/validate-npm-package-license/index.js:1:74)
+7 verbose stack     at Module._compile (module.js:409:26)
+7 verbose stack     at Object.Module._extensions..js (module.js:416:10)
+7 verbose stack     at Module.load (module.js:343:32)
+7 verbose stack     at Function.Module._load (module.js:300:12)
+7 verbose stack     at Module.require (module.js:353:17)
+8 verbose cwd /Users/averybentz/Desktop/averybentz.com/averybentz
+9 error Darwin 15.5.0
+10 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "init"
+11 error node v4.4.5
+12 error npm  v2.15.5
+13 error code MODULE_NOT_FOUND
+14 error Cannot find module 'spdx'
+15 error If you need help, you may report this error at:
+15 error     <https://github.com/npm/npm/issues>
+16 verbose exit [ 1, true ]
